@@ -1,0 +1,224 @@
+body {
+  background-color: var(--main-color);
+  font-family: var(--body-font-family);
+  margin: 0;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "AudibleSans";
+  src: url("./media/fonts/audiblesans-bd.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AudibleSans";
+  src: url("./media/fonts/audiblesans-md.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AudibleSans";
+  src: url("./media/fonts/audiblesans-rg.woff2") format("woff2");
+}
+
+[class$=-icon],
+[class$=__icon],
+[class*=-icon],
+[class*=__icon] {
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: wknd-icon-font !important;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--textColor, white);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+  font-family: AudibleSans, Arial, Helvetica, sans-serif;
+  font-weight: var(--fontWeightNormal, normal);
+  /* margin-bottom: 13.5px; */
+  /* margin-top: 27px; */
+}
+
+h1, h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52.8px;
+}
+
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
+  font-family: var(--fontFamilySansSerif, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-weight: var(--fontWeightBold, 600);
+  text-transform: uppercase
+}
+
+.h1,
+.hero h1 {
+  font-size: var(--fontSizeH1)
+}
+
+.h2,
+h2 {
+  font-size: var(--fontSizeH2)
+}
+
+.h3,
+h3 {
+  font-size: var(--fontSizeH3)
+}
+
+.h4,
+h4 {
+  font-size: var(--fontSizeH4)
+}
+
+.h5,
+h5 {
+  font-size: var(--fontSizeH5)
+}
+
+.h6,
+h6 {
+  color: var(--fontColorH6);
+  font-size: var(--fontColorH6);
+  padding-top: 1em;
+  padding-bottom: unset;
+  margin-bottom: unset;
+}
+
+a {
+  color: var(--anchorColor);
+  text-decoration: none
+}
+
+h1 a,
+h2 a,
+h3 a {
+  color: var(--titleAnchorColor)
+}
+
+h1 a:after,
+h2 a:after,
+h3 a:after {
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  font-family: wknd-icon-font !important;
+  font-size: 1.25rem;
+  font-size: var(--fontSizeXSmall);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  left: .75em;
+  line-height: 1;
+  position: relative;
+  text-transform: none;
+  top: -.5em
+}
+
+p {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  margin: 0 0 13.5px;
+  text-align: justify;
+  color: var(--font-color);
+}
+
+div[role=status] {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+:root {
+  --main-accent-color:#ffc719;
+  --hero-teaser-height:100vh;
+  --hero-teaser-width: 100vw;
+  --hero-teaser-positon: sticky;
+  --featured-teaser-direction: row;
+  --featured-teaser-column-gap: 120px;
+  --highlight-background-color: red;
+  --main-text-color: white;
+  --main-color:#021524;
+  --main-color-opacity:rgba(4,25,45,.55);
+  --main-color-opacity-lighter:rgba(4,25,45,.45);
+  --main-color-opacity-darker:rgba(4,25,45,.95);
+  --main-light-background: var(--main-color);
+  --font-family: "wknd-icon-font" !important;
+  --main-nav-link-color: #fff;
+  --main-nav-color: red;
+  --dark-nav: rgba(41,41,41);
+  --main-dark-background: rgba(41,41,41);
+  --light-nav: #fff;
+  --font-size-body: 18px;
+  --line-height-body: 2.5;
+  --fontSizeH1: 60px;
+  --fontSizeH2: 48px;
+  --fontSizeH3: 24px;
+  --fontSizeH4: 21px;
+  --fontSizeH5: 32px;
+  --fontSizeH6: 12px;
+  --fontSizeMed: 16px;
+  --fontColorH6: #696969;
+  --titleAnchorColor: red;
+  --anchorColor: #0045ff;
+  --fontSizeXSmall: var(--fontSizeH6);
+  --navFontSize: 44px;
+  --navFontWeight: 500;
+  --fontWeightM: var(--navFontWeight);
+  --h1FontWeight: 600;
+  --h1FontSize: 72px;
+  --line-height-l: 76px;
+  --body-font-family: AudibleSans, Arial, Helvetica, sans-serif;
+  --body-title-font-family: var(--body-font-family);
+  --nav-height: 59px;
+  --nav-logo-width: 140px;
+
+  --space-2-3: clamp(1.5rem, 1rem + 1.67vw, 2.5rem);
+  --space-3-4: clamp(2rem, .81rem + 3.96vw, 4.38rem);
+
+  --font-color:white;
+}
+
+.blue-box {
+  border: 2px solid blue !important;
+  background-color: #0045ff;
+}
