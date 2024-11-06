@@ -71,7 +71,7 @@ function defaultRenderText(node, format) {
 function defaultRenderImage(node) {
   const mimeType = node.data?.mimetype;
   if (mimeType && mimeType.startsWith('image')) {
-    return <img src={'https://author-p101152-e938206.adobeaemcloud.com' + node.data.path} alt={'reference'} />;
+    return <img src={'https://author-p127526-e1367718.adobeaemcloud.com' + node.data.path} alt={'reference'} />;
   }
   return null;
 }

@@ -3,7 +3,7 @@ import BrokenImage from '../media/broken.jpg';
 
 const defaultEndpoint = '/content/_cq_graphql/audible/endpoint.json';
 const defaultProject = 'audible';
-const defaultServiceURL = 'https://author-p101152-e938206.adobeaemcloud.com/';
+const defaultServiceURL = 'https://author-p127526-e1367718.adobeaemcloud.com/';
 const defaultPlaceholdersExtensionURL = 'https://1154643-geoipplaceholders.adobeio-static.net/api/v1/web/geoip-placeholders';
 
 export const AppContext = createContext({
