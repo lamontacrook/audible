@@ -204,7 +204,7 @@ a:focus::after {
 .button {
   border: 1.25px solid var(--main-accent-color);
   color: var(--main-accent-color);
-  align-self:center;
+  /* align-self:center; */
   right:0;
   padding: 5px 20px;
   margin-right: 20px;
@@ -212,6 +212,15 @@ a:focus::after {
   text-decoration: none;
   white-space: nowrap;
   background: var(--main-color-opacity-lighter);
+
+  width: 68px;
+  height: 27px;
+  border-radius: 999px;
+  padding: 12px 40px 10px 37px;
+  margin: 0;
+  background-color: #FBBC40;
+  color: unset;
+  border:0
 }
 
 /* desktop nav styles */

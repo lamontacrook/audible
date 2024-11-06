@@ -122,9 +122,9 @@ const ProductTeaser = ({ content }) => {
               <h5>{book.title}</h5>
 
               <ul>
-                <li>Written by: {book.author}</li>
-                <li>Performed by: {book.performer}</li>
-                <li>Length: {book.length}</li>
+                <li><strong>Written by:</strong> {book.author}</li>
+                <li><strong>Performed by:</strong> {book.performer}</li>
+                <li><strong>Length:</strong> {book.length}</li>
               </ul>
               {content.callToAction && (
                 <LinkManager item={content} className='button'>{content.callToAction}</LinkManager>

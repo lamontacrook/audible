@@ -4,6 +4,7 @@ import ImageList from '../../components/imagelist';
 import MagazineArticle from '../../components/magazine-article';
 import Products from '../../components/products/products';
 import ProductTeaser from '../../components/productteaser/productteaser';
+import ValueStatement from '../../components/value-statement';
 import PropTypes from 'prop-types';
 
 export const componentMapping = {
@@ -11,7 +12,8 @@ export const componentMapping = {
   ImageList,
   MagazineArticle,
   Products,
-  ProductTeaser
+  ProductTeaser,
+  ValueStatement
 };
 
 const ModelManager = ({ content, config, references }) => {

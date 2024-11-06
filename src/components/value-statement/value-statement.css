@@ -1,0 +1,21 @@
+.value-statement {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+}
+
+.value-statement p, .value-statement li {
+  text-align: center;
+}
+
+.value-statement li {
+  width: 33%;
+}
+
+.value-statement ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding: 0 30px;
+}

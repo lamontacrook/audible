@@ -37,6 +37,19 @@
   text-align: justify;
 }
 
+.product-teaser ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.product-teaser ul>li {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 @media only screen and (min-width: 1000px) {
   .product-teaser>.container>picture>img {
     width: 384px;

@@ -6,7 +6,6 @@ accordance with the terms of the Adobe license agreement accompanying
 it.
 */
 import React, { isValidElement, cloneElement } from 'react';
-
 /**
  * Map of JSON nodeTypes to HTML formats
  */
@@ -72,7 +71,7 @@ function defaultRenderText(node, format) {
 function defaultRenderImage(node) {
   const mimeType = node.data?.mimetype;
   if (mimeType && mimeType.startsWith('image')) {
-    return <img src={node.data.path} alt={'reference'} />;
+    return <img src={'https://author-p101152-e938206.adobeaemcloud.com' + node.data.path} alt={'reference'} />;
   }
   return null;
 }

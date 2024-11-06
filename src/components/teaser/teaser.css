@@ -107,11 +107,21 @@ header .hero {
 .teaser.featured>.container>.content-block {
   max-width: 500px;
   /* padding: 0 22px 22px; */
-  background-color: red;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.teaser.featured h2 {
+  margin-bottom: 40px;
+}
+
+.teaser.featured h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: AudibleSans, Arial, Helvetica, sans-serif;
 }
 
 .teaser.featured>.container>.content-block p {
@@ -123,7 +133,7 @@ header .hero {
 
 @media only screen and (min-width: 1000px) {
   .teaser.featured>.container>picture>img {
-    width: 384px;
+    width: 560px;
     /* box-shadow: 20px 20px var(--main-accent-color); */
   }
 
@@ -133,21 +143,21 @@ header .hero {
   }
 
   .teaser.featured>.container {
-    flex-direction: var(--featured-teaser-direction);
+    flex-direction: row-reverse;
     align-items: center;
     /* padding: 7% 5%; */
     margin-top: 150px;
-    background-color: aliceblue;
   }
 
   .teaser.featured {
     max-width: 1260px;
   }
 
-  .teaser.featured .value-block ul {
+  .teaser.featured ul {
     color: white;
     list-style: none;
     display: flex;
+    padding: 0;
   }
 
   .teaser.featured .value-block>span>ul>li {
