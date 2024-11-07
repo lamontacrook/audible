@@ -46,10 +46,10 @@ const Modal = ({ config }) => {
   };
 
   const updatePage = () => {
-    let { pathname } = location;
-    if (pathname === '/' || pathname.startsWith('/aem-pure-headless'))
-      pathname = config.homePage._path.replace(`/content/dam/${context.project}`, '');
-    pathname = pathname.replace(/(\/site\/).*(\/.*\/)/g, '$1' + language.value + '$2');
+    // let { pathname } = location;
+    // if (pathname === '/' || pathname.startsWith('/aem-pure-headless'))
+    //   pathname = config.homePage._path.replace(`/content/dam/${context.project}`, '');
+    // pathname = pathname.replace(/(\/site\/).*(\/.*\/)/g, '$1' + language.value + '$2');
     window.location.replace(pathname);
   };
 
