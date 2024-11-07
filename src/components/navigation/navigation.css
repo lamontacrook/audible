@@ -223,6 +223,11 @@ a:focus::after {
   border:0
 }
 
+nav img.search {
+  width: 30px;
+  margin-right: 20px;
+}
+
 /* desktop nav styles */
 @media (min-width: 1000px) {
   header nav {
